@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>URL Shortener Microservice</title>
+
+    <link href="/public/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>URL Shortener Microservice</h1>
+
+      <section>
+        <!-- Adjusted action attribute to specify the endpoint -->
+        <form action="/api/shorturl" method="POST">
+          <fieldset>
+            <legend>URL Shortener</legend>
+            <label for="url_input">URL:</label>
+            <input
+              id="url_input"
+              type="text"
+              name="url"
+              placeholder="https:www.google.com"
+            />
+            <input type="submit" value="POST URL" />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>By <a href="https://www.github.com/kamehamehaa">Aayush Gupta</a></p>
+    </footer>
+  </body>
+</html>
